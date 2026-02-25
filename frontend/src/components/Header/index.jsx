@@ -1,11 +1,11 @@
 function Header() {
   return (
     <header className="shadow-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-10 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-10 py-4">
         <div>
           <h1 className="text-primary-400 text-3xl font-bold">Pairbnb</h1>
         </div>
-        <div className="flex items-center rounded-full border border-gray-200 px-4 py-2 shadow-md">
+        <div className="hidden lg:flex items-center rounded-full border border-gray-200 px-4 py-2 shadow-md">
           <p className="border-r border-r-gray-300 pr-4">Buscar destino</p>
           <p className="border-r border-r-gray-300 px-4">Inserir datas</p>
           <p className="px-4">Número de hóspedes</p>
@@ -28,7 +28,7 @@ function Header() {
           </div>
         </div>
         <div className="flex items-center rounded-full border border-gray-200 px-4 py-2 shadow-md">
-          <div className="pr-1">
+          <div className="pr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -44,8 +44,8 @@ function Header() {
               />
             </svg>
           </div>
-
-          <div className="pr-4">
+          
+          <div className="pr-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -60,7 +60,7 @@ function Header() {
             </svg>
           </div>
 
-          <p>Nome do usuário</p>
+          <p className="sm:max-w-32 max-w-20 truncate">Nome do usuário</p>
         </div>
       </div>
     </header>
