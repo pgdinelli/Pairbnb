@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary-400: #FF385C; 
+    --color-primary-400: #FF385C;
+    --default-font-family: Helvetica, sans-serif;
 }
