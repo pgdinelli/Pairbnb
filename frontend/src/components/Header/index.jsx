@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header className="shadow-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-10 py-4">
-        <div>
+        <Link to='/'>
           <h1 className="text-primary-400 text-3xl font-bold">Pairbnb</h1>
-        </div>
+        </Link>
         <div className="hidden lg:flex items-center rounded-full border border-gray-200 px-4 py-2 shadow-md">
           <p className="border-r border-r-gray-300 pr-4">Buscar destino</p>
           <p className="border-r border-r-gray-300 px-4">Inserir datas</p>
@@ -45,7 +47,7 @@ function Header() {
             </svg>
           </div>
           
-          <div className="pr-1">
+          <Link to='/login' className="pr-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -58,9 +60,9 @@ function Header() {
                 clipRule="evenodd"
               />
             </svg>
-          </div>
+          </Link>
 
-          <p className="sm:max-w-32 max-w-20 truncate">Nome do usuário</p>
+          <Link to='/login' className="sm:max-w-32 max-w-20 truncate">Nome do usuário</Link>
         </div>
       </div>
     </header>
